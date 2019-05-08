@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>framework demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=11">
+</head>
+<body>
+  <div></div>
+  <script src="script/promise.js"></script>
+  <script>
+    new demoPromise((resolve,reject)=>{
+      resolve('test')
+    }).then((res)=>{
+      console.log(res)
+    }).catch((err)=>{
+      console.log(err);
+    }).finally(()=>{
+      console.log('finally')
+    })
+  </script>
+</body>
+</html>
