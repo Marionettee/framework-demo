@@ -8,17 +8,20 @@
 </head>
 <body>
   <div></div>
-  <script src="script/promise.js"></script>
+  <script src="script/arrayFunction.js"></script>
   <script>
-    new demoPromise((resolve,reject)=>{
-      resolve('test')
-    }).then((res)=>{
-      console.log(res)
-    }).catch((err)=>{
-      console.log(err);
-    }).finally(()=>{
-      console.log('finally')
-    })
+    // new demoPromise((resolve,reject)=>{
+    //   resolve('test')
+    // }).then((res)=>{
+    //   console.log(res)
+    // }).catch((err)=>{
+    //   console.log(err);
+    // }).finally(()=>{
+    //   console.log('finally')
+    // })
+    let a = arrayMap([1,2,3],function(num){return num+1})
+    console.log(a);
+
   </script>
 </body>
 </html>
